@@ -22,6 +22,7 @@ import { MetaplexProvider } from "../components/MetaplexProvider";
 import { MintNFTs } from "../components/MintNFTs";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import dynamic from 'next/dynamic';
+import Head from "next/head";
 
 export default function Home() {
   const [network, setNetwork] = useState(WalletAdapterNetwork.Devnet);
@@ -62,6 +63,10 @@ export default function Home() {
 
 
   return (
+    <>
+    <Head>
+      <title>Mint</title>
+    </Head>
     <div className="wrapper">
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
@@ -86,5 +91,6 @@ export default function Home() {
         </WalletProvider>
       </ConnectionProvider>
     </div>
+    </>
   );
 }
