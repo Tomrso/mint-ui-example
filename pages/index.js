@@ -77,7 +77,9 @@ export default function Home() {
                   <ButtonWrapper />
                 </div>
                 <MintNFTs onClusterChange={handleChange} />
+                <p>(Devnet Only)</p>
                 <p>New to NFT's? Learn how to set up your first wallet <a href="https://blog.thirdweb.com/guides/getting-started-with-solana/" className="highlighted-link">here</a>. It's free and takes less than 5 minutes.</p>
+                <p>Need Devnet SOL? Get some from <a href="https://solfaucet.com/" className="highlighted-link">here.</a></p>
               </div>
             </MetaplexProvider>
           </WalletModalProvider>
