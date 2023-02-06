@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styles from "../styles/Home.module.css";
 import { useMemo, useState, useEffect } from "react";
 import {
